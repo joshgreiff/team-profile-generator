@@ -1,10 +1,7 @@
 const fs = require('fs')
 let employeeArr = []
 
-const collectEmployee = function(employee){
-    employeeArr.push(employee)
-    console.log(employeeArr)
-}
+
 
 const generateMarkdown = function(data) {
     return `

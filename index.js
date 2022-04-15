@@ -16,8 +16,7 @@ const promptUser = function () {
             message: "How many employees are on your team?"
         },
     ]).then((number) => {
-     
-
+    let numberOf = number.number
     inquirer    
         .prompt([
             {
@@ -47,7 +46,7 @@ const promptUser = function () {
             if(data.position === 'manager'){
                 const employee1 = new Manager(data.name, data.id, data.email, data.position)
                 employee1.getOffice()
-               
+            
 
             }
             if(data.position === 'engineer'){
@@ -56,12 +55,11 @@ const promptUser = function () {
             }
             if(data.position === 'intern'){
                 const employee1 = new Intern(data.name, data.id, data.email, data.position)
-                
+
             }
 
          })
-        
-    
+          
 })
 }
 promptUser()
