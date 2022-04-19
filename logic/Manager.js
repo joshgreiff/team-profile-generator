@@ -8,18 +8,7 @@ class Manager extends Employee {
         this.position = position
         this.office = office
     }
-    getOffice() {
-        inquirer.prompt([
-            {
-                name: 'office',
-                type: 'input',
-                message: "What is this team manager's office #??"
-            }
-        ]).then((data) => {
-            this.office = data.office
-            collectEmployee(this)
-        })
-    }
+    
 }
 
 module.exports = Manager

@@ -16,7 +16,7 @@ class Employee {
     }
     getPosition() {
         if(this.position === 'manager'){
-            console.log('this is a manager')
+            
         }
     }
 
